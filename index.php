@@ -115,8 +115,8 @@
                 <form id="contact" action="">
                     <input id="name" type="text" placeholder="Your Name" required>
                     <input id="message" type="text" placeholder="Message" required>
-                    <input id="phone" type="phone" placeholder="Your Phone Number" style="height: 45px;width: 520px;border-radius: 5px;"><br><br>
-                    <input id="email" type="email" placeholder="Your Email" required style="height: 45px;width: 520px;border-radius: 5px;"><br><Br>
+                    <input id="phone" type="phone" placeholder="Your Phone Number" style="height: 45px;width: 510px;border-radius: 5px;"><br><br>
+                    <input id="email" type="email" placeholder="Your Email" required style="height: 45px;width: 510px;border-radius: 5px;"><br><Br>
                     <button>Submit</button>
                     
 
