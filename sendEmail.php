@@ -2,6 +2,8 @@
 if(isset($_POST['name'])){
         $name = $_POST['name'];
         $message = $_POST['message'];
+        $message = $_POST['phone'];
+        $message = $_POST['email'];
 
 
 
@@ -16,7 +18,7 @@ if(isset($_POST['name'])){
         $nTo = 'Nguyen Cuong'; 
         $mTo = 'bennguyen0808@gmail.com';   
         $mail             = new PHPMailer();
-        $body             = '<strong>Họ và tên:  </strong>'.$name.'<br>'.'<strong>message:  </strong>'.$message.'<br>';   // Noi dung email
+        $body             = '<strong>Họ và tên:  </strong>'.$name.'<br>'.'<strong>Message:  </strong>'.$message.'<br>'.'<strong>Phone Number:   </strong>'. $phone.'<br>'.'<strong>Email:   </strong>'.$email.;   // Noi dung email
         $title = 'Banana ';  
         $mail->IsSMTP();             
         $mail->CharSet  = "utf-8";
