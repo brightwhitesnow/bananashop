@@ -113,8 +113,10 @@
             </div>
             <div class="mid">
                 <form id="contact" action="">
-                    <input id="name" type="text" placeholder="Your Name">
-                    <input id="message" type="text" placeholder="some message">
+                    <input id="name" type="text" placeholder="Your Name" required>
+                    <input id="message" type="text" placeholder="Message" required>
+                    <input id="phone" type="phone" placeholder="Your Phone Number">
+                    <input id="email" type="email" placeholder="Your Email" required>
                     <button>Submit</button>
                     
 
@@ -181,9 +183,9 @@
    
                var name = $("#name");
                var message = $("#message");
-
-               
-               
+               var phone = $("#phone"); 
+               var email = $("#email");
+            }
 
                
                
@@ -195,6 +197,8 @@
                    data: {
                        name: name.val(),
                        message: message.val(),
+                       phone: phone.val(),
+                       email: email.val(),
                    },
                    success: function (data) {
                        sweetAlert(data.status,data.response);
@@ -202,9 +206,7 @@
                });
                return false;
    
-           })
+           }))
     </script>
-
-
 </body>
 </html>
