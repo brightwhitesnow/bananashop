@@ -2,8 +2,8 @@
 if(isset($_POST['name'])){
         $name = $_POST['name'];
         $message = $_POST['message'];
-        $message = $_POST['phone'];
-        $message = $_POST['email'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
 
 
 
