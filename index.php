@@ -245,6 +245,10 @@
                    },
                    success: function (data) {
                        sweetAlert(data.status,data.response);
+                       confetti.start()
+            setTimeout(function () {
+                confetti.stop();
+            }, 3000);
                    }
                });
                return false;
