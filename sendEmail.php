@@ -4,22 +4,20 @@ if(isset($_POST['name'])){
         $message = $_POST['message'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
-
-
-
+        
         include('./phpmailer/class.smtp.php');
         include "./phpmailer/class.phpmailer.php"; 
         
 
 
-        $nFrom = "Banana";    
+        $nFrom = "Banana Shop";    
         $mFrom = 'nguyenvancuong215@gmail.com'; 
         $mPass = 'Menu00d1';       
-        $nTo = 'Nguyen Cuong'; 
+        $nTo = 'Ben Nguyen'; 
         $mTo = 'bennguyen0808@gmail.com';   
         $mail             = new PHPMailer();
-        $body             = '<strong>Họ và tên:  </strong>'.$name.'<br>'.'<strong>Message:  </strong>'.$message.'<br>'.'<strong>Phone Number:   </strong>'. $phone.'<br>'.'<strong>Email:   </strong>'.$email.;   // Noi dung email
-        $title = 'Banana ';  
+        $body             = '<strong>Name:  </strong>'.$name.'<br>'.'<strong>Email:  </strong>'.$email.'<br>'.'<strong>Phone:  </strong>'.$phone.'<br>'.'<strong>Message: </strong>'.$message;   // Noi dung email
+        $title = 'Banana Shop | '.$name;  
         $mail->IsSMTP();             
         $mail->CharSet  = "utf-8";
         $mail->SMTPDebug  = 0;  
@@ -31,7 +29,7 @@ if(isset($_POST['name'])){
         $mail->Username   = $mFrom;  
         $mail->Password   = $mPass;    
         $mail->SetFrom($mFrom, $nFrom);
-        $mail->AddReplyTo($message, $name); 
+        $mail->AddReplyTo($email, $name); 
         $mail->Subject    = $title;
         $mail->MsgHTML($body);
         $mail->AddAddress($mTo, $nTo);
@@ -48,4 +46,4 @@ exit(json_encode(array("status" => $status, "response" => $response)));
 
 }
 ?>
-                           
+
