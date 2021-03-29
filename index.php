@@ -34,11 +34,11 @@
         .fas fa-search {
             height: 20px;
         }
-        /* #email,#phone{
+         #email,#phone{
             height: 20px;
             padding: 5px;
 
-        } */
+        } 
     </style>
     <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./packet/sweetalert2.css">
