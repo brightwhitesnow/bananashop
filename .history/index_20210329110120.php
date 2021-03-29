@@ -35,7 +35,7 @@
             height: 20px;
         }
          #email,#phone{
-            height: 50px;
+            height: 20px;
             padding: 5px;
 
         } 
@@ -120,8 +120,8 @@
                 <form id="contact" action="">
                     <input id="name" type="text" placeholder="Your Name" required>
                     <input id="message" type="text" placeholder="Message" required>
-                    <input id="phone" type="phone" placeholder="Your Phone Number">
-                    <input id="email" type="email" placeholder="Your Email" required>
+                    <input id="phone" type="phone" placeholder="Your Phone Number" >
+                    <input id="email" type="email" placeholder="Your Email" required >
                     <button>Submit</button>
                     
 

@@ -35,7 +35,7 @@
             height: 20px;
         }
          #email,#phone{
-            height: 50px;
+            height: 20px;
             padding: 5px;
 
         } 
